@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-wkwebview-localstorage-migrator" version="0.0.1">
+    <name>WKWebView LocalStorage Migrator</name>
+    <description>Copies LocalStorage file to new Library/WebKit/WebsiteData/LocalStorage folder if necessary.</description>
+    <license>MIT</license>
+    <keywords>cordova,localstorage,wkwebview</keywords>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+        </config-file>
+        <header-file src="src/ios/AppDelegate+WKWebViewLocalStorageMigrator.h" />
+        <source-file src="src/ios/AppDelegate+WKWebViewLocalStorageMigrator.m" />
+    </platform>
+</plugin>
